@@ -1,0 +1,57 @@
+[
+  {
+    "model": "peminjaman.peminjaman",
+    "pk": 1,
+    "fields": {
+      "nama_peminjam": "Rian Wijaya",
+      "nim_peminjam": "202410001",
+      "telp_peminjam": "081234567890",
+      "jurusan": "Teknik Informatika",
+      "tanggal_pinjam": "2026-06-20"
+    }
+  },
+  {
+    "model": "peminjaman.peminjaman",
+    "pk": 2,
+    "fields": {
+      "nama_peminjam": "Siti Aminah",
+      "nim_peminjam": "202410002",
+      "telp_peminjam": "085711223344",
+      "jurusan": "Sistem Informasi",
+      "tanggal_pinjam": "2026-06-20"
+    }
+  },
+  {
+    "model": "peminjaman.detailpeminjaman",
+    "pk": 1,
+    "fields": {
+      "peminjaman": 1,
+      "judul_buku": "Belajar Django Sampai Mastah",
+      "kode_buku": "BK-001",
+      "tanggal_wajib_kembali": "2026-06-27",
+      "status": "Dipinjam"
+    }
+  },
+  {
+    "model": "peminjaman.detailpeminjaman",
+    "pk": 2,
+    "fields": {
+      "peminjaman": 1,
+      "judul_buku": "Tutorial Python Pemula",
+      "kode_buku": "BK-002",
+      "tanggal_wajib_kembali": "2026-06-27",
+      "status": "Dipinjam"
+    }
+  },
+  {
+    "model": "peminjaman.detailpeminjaman",
+    "pk": 3,
+    "fields": {
+      "peminjaman": 2,
+      "judul_buku": "Dasar-Dasar Database SQL",
+      "kode_buku": "BK-003",
+      "tanggal_wajib_kembali": "2026-06-30",
+      "status": "Kembali"
+    }
+  }
+]

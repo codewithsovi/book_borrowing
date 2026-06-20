@@ -1,0 +1,79 @@
+{% extends 'admin/base_admin.html' %}
+{% load static %}
+
+{% block content %}
+<div class="flex flex-wrap -mx-3">
+    <div class="flex-none w-full max-w-full px-3">
+        <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
+            <div class="p-6 pb-0 mb-0 border-b-0 border-b-solid rounded-t-2xl border-b-transparent">
+                <h6 class="dark:text-white font-bold text-lg">Daftar Peminjaman</h6>
+            </div>
+            <div class="flex-auto px-0 pt-0 pb-2">
+                <div class="p-0 overflow-x-auto">
+                    <table class="items-center w-full mb-0 align-top border-collapse dark:border-white/40 text-slate-500">
+                        <thead class="align-bottom">
+                            <tr>
+                                <th class="px-6 py-3 font-bold text-left uppercase bg-transparent border-b border-solid border-slate-100 dark:border-white/40 dark:text-white text-xxs tracking-none whitespace-nowrap text-slate-400 opacity-70">
+                                    No
+                                </th>
+                                <th class="px-6 py-3 font-bold text-left uppercase bg-transparent border-b border-solid border-slate-100 dark:border-white/40 dark:text-white text-xxs tracking-none whitespace-nowrap text-slate-400 opacity-70">
+                                    Nama Peminjam
+                                </th>
+                                <th class="px-6 py-3 font-bold text-left uppercase bg-transparent border-b border-solid border-slate-100 dark:border-white/40 dark:text-white text-xxs tracking-none whitespace-nowrap text-slate-400 opacity-70">
+                                    Jurusan
+                                </th>
+                                <th class="px-6 py-3 font-bold text-center uppercase bg-transparent border-b border-solid border-slate-100 dark:border-white/40 dark:text-white text-xxs tracking-none whitespace-nowrap text-slate-400 opacity-70">
+                                    No.Tlp
+                                </th>
+                                <th class="px-6 py-3 font-bold text-center uppercase bg-transparent border-b border-solid border-slate-100 dark:border-white/40 dark:text-white text-xxs tracking-none whitespace-nowrap text-slate-400 opacity-70">
+                                    Details
+                                </th>
+                                <th class="px-6 py-3 font-bold text-center uppercase bg-transparent border-b border-solid border-slate-100 dark:border-white/40 dark:text-white text-xxs tracking-none whitespace-nowrap text-slate-400 opacity-70">
+                                    Aksi
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-6 py-4 align-middle bg-transparent border-b border-solid border-slate-100 dark:border-white/40 whitespace-nowrap">
+                                    <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-600">2</span>
+                                </td>
+                                
+                                <td class="px-6 py-4 align-middle bg-transparent border-b border-solid border-slate-100 dark:border-white/40 whitespace-nowrap">
+                                    <div class="flex flex-col justify-center">
+                                        <h6 class="mb-0 text-sm font-semibold leading-normal dark:text-white text-slate-700">John Michael</h6>
+                                        <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-slate-400">232323232</p>
+                                    </div>
+                                </td>
+                                
+                                <td class="px-6 py-4 align-middle bg-transparent border-b border-solid border-slate-100 dark:border-white/40 whitespace-nowrap">
+                                    <p class="mb-0 text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-600">
+                                        Manager
+                                    </p>
+                                </td>
+                                
+                                <td class="px-6 py-4 text-center align-middle bg-transparent border-b border-solid border-slate-100 dark:border-white/40 whitespace-nowrap">
+                                    <span class="bg-gradient-to-tl from-emerald-500 to-teal-400 px-2.5 py-1 text-xs rounded-md inline-block font-bold uppercase leading-none text-white">
+                                        Online
+                                    </span>
+                                </td>
+                                
+                                <td class="px-6 py-4 text-center align-middle bg-transparent border-b border-solid border-slate-100 dark:border-white/40 whitespace-nowrap">
+                                    <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-600">23/04/18</span>
+                                </td>
+                                
+                                <td class="px-6 py-4 text-center align-middle bg-transparent border-b border-solid border-slate-100 dark:border-white/40 whitespace-nowrap">
+                                    <a href="javascript:;" class="text-xs font-semibold leading-tight text-blue-500 hover:text-blue-700 dark:text-blue-400 transition-colors">
+                                        Edit
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
